@@ -1,0 +1,13 @@
+@import '../utils/variables.scss';
+
+#container {
+    padding: 150px;
+    font-size: large;
+}
+
+.CardContainer {
+    margin: 50px auto;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+}

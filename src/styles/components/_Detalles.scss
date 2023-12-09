@@ -1,0 +1,486 @@
+@import '../utils/variables.scss';
+
+%container{
+    position: relative;
+    padding: 10px;
+    width: 100vw;
+    height: fit-content;
+    border-radius: 20px;
+    overflow: hidden;
+    &>section:nth-child(1){
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px;
+        color: white;
+        &>span {
+            font-size: 5vw;
+        }
+        &>img {
+            width: 50px;
+        }
+    }
+    &>img {
+        width: 50vw;
+        margin: -50px 25vw;
+    }
+    &>section#info{
+        background-color: white;
+        border-radius: 20px;
+        width: 98vw;
+        margin-top: -15vw;
+        &>section.types{
+            width: 100%;
+            padding-top: 80px;
+            display: flex;
+            justify-content: center;
+            &>span{
+                color: white;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 20px;
+            }
+        }
+        &>section.container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            &>section.info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 15vw;
+                border-left: 2px solid gray;
+                border-right: 2px solid gray;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            &>section.stats{
+                border-right: 2px solid gray;
+                text-align: center
+            }
+            &>section.values{
+                text-align: center;
+                font-size: 3vw;
+                margin: 0 10px;
+                &>p {
+                    margin: 10px;
+                }
+            }
+            & .barra-vida {
+                width: 30vw;
+                height: 3vw;
+                margin: 1.6vw;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            & .vida {
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+        
+    }
+}
+
+
+section#electric {
+    @extend %container;
+    background-color: $electric;
+    color: black;
+    & p.electric{
+        color: $electric;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #ffe372;
+    }
+    & .vida{
+        background-color: $electric;
+    }
+}
+
+span.electric {
+    background-color: $electric;
+}
+
+section#fire {
+    @extend %container;
+    background-color: $fire;
+    color: black;
+    & p.electric{
+        color: $fire;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: rgb(211, 148, 104);
+    }
+    & .vida{
+        background-color: $fire;
+    }
+}
+
+span.fire {
+    background-color: $fire;
+}
+
+section#fire {
+    @extend %container;
+    background-color: $fire;
+    color: black;
+    & p.fire{
+        color: $fire;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: rgb(211, 148, 104);
+    }
+    & .vida{
+        background-color: $fire;
+    }
+}
+
+span.fire {
+    background-color: $fire;
+}
+
+section#grass {
+    @extend %container;
+    background-color: $grass;
+    color: black;
+    & p.grass{
+        color: $grass;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #59a25c;
+    }
+    & .vida{
+        background-color: $grass;
+    }
+}
+
+span.grass {
+    background-color: $grass;
+}
+
+section#ground {
+    @extend %container;
+    background-color: $earth;
+    color: black;
+    & p.ground{
+        color: $earth;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #745441;
+    }
+    & .vida{
+        background-color: $earth;
+    }
+}
+
+span.ground {
+    background-color: $earth;
+}
+
+section#water {
+    @extend %container;
+    background-color: $water;
+    color: black;
+    & p.water{
+        color: $water;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #9aa7fc;
+    }
+    & .vida{
+        background-color: $water;
+    }
+}
+
+span.water {
+    background-color: $water;
+}
+
+section#dragon {
+    @extend %container;
+    background-color: $dragon;
+    color: black;
+    & p.dragon{
+        color: $fire;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #5767d2;
+    }
+    & .vida{
+        background-color: $dragon;
+    }
+}
+
+span.dragon {
+    background-color: $dragon;
+}
+
+section#rock {
+    @extend %container;
+    background-color: $stone;
+    color: black;
+    & p.rock{
+        color: $stone;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #d3bd99;
+    }
+    & .vida{
+        background-color: $stone;
+    }
+}
+
+span.rock {
+    background-color: $stone;
+}
+
+section#dark {
+    @extend %container;
+    background-color: $dark;
+    color: black;
+    & p.dark{
+        color: $dark;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #3b3c48;
+    }
+    & .vida{
+        background-color: $dark;
+    }
+}
+
+span.dark {
+    background-color: $dark;
+}
+
+section#steel{
+    @extend %container;
+    background-color: $steel;
+    color: black;
+    & p.steel{
+        color: $steel;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #375467;
+    }
+    & .vida{
+        background-color: $steel;
+    }
+}
+
+span.steel {
+    background-color: $steel;
+}
+
+section#fairy{
+    @extend %container;
+    background-color: $fairy;
+    color: black;
+    & p.fairy{
+        color: $fairy;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #c76dbb;
+    }
+    & .vida{
+        background-color: $fairy;
+    }
+}
+
+span.fairy {
+    background-color: $fairy;
+}
+
+section#flying{
+    @extend %container;
+    background-color: $flying;
+    color: black;
+    & p.flying{
+        color: $flying;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #cad1ff;
+    }
+    & .vida{
+        background-color: $flying;
+    }
+}
+
+span.flying {
+    background-color: $flying;
+}
+
+section#poison{
+    @extend %container;
+    background-color: $poison;
+    color: black;
+    & p.poison{
+        color: $poison;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #9a4ac9;
+    }
+    & .vida{
+        background-color: $poison;
+    }
+}
+
+span.poison {
+    background-color: $poison;
+}
+
+section#ghost{
+    @extend %container;
+    background-color: $ghost;
+    color: black;
+    & p.ghost{
+        color: $ghost;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #6a4eb3;
+    }
+    & .vida{
+        background-color: $ghost;
+    }
+}
+
+span.ghost {
+    background-color: $ghost;
+}
+
+section#fighting{
+    @extend %container;
+    background-color: $fighting;
+    color: black;
+    & p.fighting{
+        color: $fighting;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #ca4242;
+    }
+    & .vida{
+        background-color: $fighting;
+    }
+}
+
+span.fighting {
+    background-color: $fighting;
+}
+
+
+section#psychic{
+    @extend %container;
+    background-color: $psychic;
+    color: black;
+    & p.psychic{
+        color: $psychic;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #cd5a84;
+    }
+    & .vida{
+        background-color: $psychic;
+    }
+}
+
+span.psychic {
+    background-color: $psychic;
+}
+
+section#bug{
+    @extend %container;
+    background-color: $bug;
+    color: black;
+    & p.bug{
+        color: $bug;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: #79c77d;
+    }
+    & .vida{
+        background-color: $bug;
+    }
+}
+
+span.bug {
+    background-color: $bug;
+}
+
+section#normal{
+    @extend %container;
+    background-color: $normal;
+    color: black;
+    & p.normal{
+        color: $normal;
+        text-align: center;
+        font-size: 3vw;
+        margin: 10px;
+    }
+    & .barra-vida{
+        background-color: rgb(206, 206, 206);
+    }
+    & .vida{
+        background-color: $normal;
+    }
+}
+
+span.normal {
+    background-color: $normal;
+}
+

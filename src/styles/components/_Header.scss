@@ -1,0 +1,42 @@
+@import '../utils/variables.scss';
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gainsboro;
+}
+
+li img {
+    height: 50px;
+    margin: 10px;
+}
+
+.img1 {
+    height: 80px;
+    margin: 0   ;
+}
+
+.link-sin-estilo {
+    text-decoration: none; 
+    color: black;
+    font-size: 5vw; 
+    cursor: pointer; 
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .link-sin-estilo {
+        font-size: 3vw;
+    }
+}

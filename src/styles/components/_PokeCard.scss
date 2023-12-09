@@ -1,0 +1,183 @@
+@import '../utils/variables.scss';
+
+%section{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100px;
+    height: 140px;
+    border-radius: 20px;
+    overflow: hidden;
+    &>img{
+        width: 100px;
+        margin-top: 10px;
+    }
+    &>p.order{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    &>p:nth-child(3){
+        margin-top: -10px;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        height: 30%;
+        color: white;
+    }
+}
+
+section.electric {
+    @extend %section;
+    border: 2px solid $electric;
+    color: $electric;
+    &>p:nth-child(3){
+        background-color: $electric;
+    }
+}
+
+section.fire {
+    @extend %section;
+    border: 2px solid $fire;
+    color: $fire;
+    &>p:nth-child(3){
+        background-color: $fire;
+    }
+}
+
+section.grass {
+    @extend %section;
+    border: 2px solid $grass;
+    color: $grass;
+    &>p:nth-child(3){
+        background-color: $grass;
+    }
+}
+
+section.ground {
+    @extend %section;
+    border: 2px solid $earth;
+    color: $earth;
+    &>p:nth-child(3){
+        background-color: $earth;
+    }
+}
+
+section.water {
+    @extend %section;
+    border: 2px solid $water;
+    color: $water;
+    &>p:nth-child(3){
+        background-color: $water;
+    }
+}
+
+section.dragon {
+    @extend %section;
+    border: 2px solid $dragon;
+    color: $dragon;
+    &>p:nth-child(3){
+        background-color: $dragon;
+    }
+}
+
+section.rock {
+    @extend %section;
+    border: 2px solid $stone;
+    color: $stone;
+    &>p:nth-child(3){
+        background-color: $stone;
+    }
+}
+
+section.dark {
+    @extend %section;
+    border: 2px solid $dark;
+    color: $dark;
+    &>p:nth-child(3){
+        background-color: $dark;
+    }
+}
+
+section.steel {
+    @extend %section;
+    border: 2px solid $steel;
+    color: $steel;
+    &>p:nth-child(3){
+        background-color: $steel;
+    }
+}
+
+section.fairy {
+    @extend %section;
+    border: 2px solid $fairy;
+    color: $fairy;
+    &>p:nth-child(3){
+        background-color: $fairy;
+    }
+}
+
+section.flying {
+    @extend %section;
+    border: 2px solid $flying;
+    color: $flying;
+    &>p:nth-child(3){
+        background-color: $flying;
+    }
+}
+
+section.poison {
+    @extend %section;
+    border: 2px solid $poison;
+    color: $poison;
+    &>p:nth-child(3){
+        background-color: $poison;
+    }
+}
+
+section.ghost {
+    @extend %section;
+    border: 2px solid $ghost;
+    color: $ghost;
+    &>p:nth-child(3){
+        background-color: $ghost;
+    }
+}
+
+section.fighting {
+    @extend %section;
+    border: 2px solid $fighting;
+    color: $fighting;
+    &>p:nth-child(3){
+        background-color: $fighting;
+    }
+}
+
+section.psychic {
+    @extend %section;
+    border: 2px solid $psychic;
+    color: $psychic;
+    &>p:nth-child(3){
+        background-color: $psychic;
+    }
+}
+
+section.bug {
+    @extend %section;
+    border: 2px solid $bug;
+    color: $bug;
+    &>p:nth-child(3){
+        background-color: $bug;
+    }
+}
+
+section.normal {
+    @extend %section;
+    border: 2px solid $normal;
+    color: $normal;
+    &>p:nth-child(3){
+        background-color: $normal;
+    }
+}
